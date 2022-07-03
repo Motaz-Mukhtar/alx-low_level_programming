@@ -2,11 +2,11 @@
 
 int main(void) 
 {
-	int n = 0;
-	while(n < 10)
+	char c = 'z';
+	while (c >= 'a') 
 	{
-		printf("%he", n);
-		n++;
+		printf("%c", c);
+		c--;
 	}
 	printf("\n");
 	return (0);

@@ -1,15 +1,21 @@
 #include <stdio.h>
 
-int main(void) 
+/**
+ * main - this the Starting point of the program
+ * description - print the alphbet of Uppercase and lowercase
+ * Return: main function
+*/
+int main(void)
 {
-	int c = 'a';
-	int C = 'A';
-	while (c <= 'z') 
+	char c = 'a';
+	char C = 'A';
+
+	while (c <= 'z')
 	{
 		printf("%c", c);
 		c++;
 	}
-	while(C <= 'Z') 
+	while (C <= 'Z')
 	{
 		printf("%c", C);
 		C++;

@@ -2,6 +2,14 @@
 
 int main(void)
 {
+	/*
+	 *
+	 *This is betty styel
+	 *
+	 *
+	 *
+	 *
+	 * */
 	char c = 'a';
 	while(c <= 'z') 
 	{

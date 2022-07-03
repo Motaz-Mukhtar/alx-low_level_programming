@@ -1,13 +1,19 @@
 #include <stdio.h>
-
-int main(void) 
+/**
+ * main - This is the starting point of the program
+ * Return: main function
+ */
+int main(void)
 {
 	char c = 'z';
-	while (c >= 'a') 
+
+	while (c >= 'a')
+
 	{
 		printf("%c", c);
 		c--;
 	}
 	printf("\n");
 	return (0);
+
 }

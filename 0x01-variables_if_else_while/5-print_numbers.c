@@ -1,13 +1,19 @@
 #include <stdio.h>
-
-int main(void) 
+/*
+ * main - This is the Starting point of the program
+ * Return: main function
+ */
+int main(void)
 {
 	int n = 0;
-	while(n < 10)
+	while (n < 10)
+
 	{
-		printf("%he", n);
+		printf("%d", n);
 		n++;
 	}
 	printf("\n");
+
 	return (0);
+
 }

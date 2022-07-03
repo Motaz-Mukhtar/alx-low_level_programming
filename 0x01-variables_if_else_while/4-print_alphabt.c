@@ -1,24 +1,27 @@
 #include <stdio.h>
-
+/**
+ * main - This is the Starting point of the program
+ * Return: main function
+ */
 int main(void)
+
 {
-	/*
-	 *
-	 *This is betty styel
-	 *
-	 *
-	 *
-	 *
-	 * */
 	char c = 'a';
-	while(c <= 'z') 
+
+	while (c <= 'z')
+
 	{
 		if (c != 'q' && c != 'e')
+
 		{
+
 			printf("%c", c);
+
 		}
 		c++;
 	}
 	printf("\n");
+
 	return (0);
+
 }

@@ -1,13 +1,28 @@
 #include <stdio.h>
+/**
+ * main - This is the starting point of the program
+ * Return: main function
+ */
+int main(void)
 
-int main(void) 
 {
-	char h = '0';
-	while(h <= 16) 
+	char n = '0';
+	char h = 'a';
+
+	while (n <= '9')
+
 	{
-		printf("%c", h);
+		putchar(n);
+		n++;
+	}
+
+	while (h <= 'f')
+	{
+		putchar(h);
 		h++;
 	}
+
 	printf("\n");
 	return (0);
+
 }

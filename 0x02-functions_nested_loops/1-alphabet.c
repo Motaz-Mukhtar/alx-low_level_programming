@@ -3,6 +3,7 @@
  * main - Entry point of the program
  * Return: main function
  */
+
 int main(void)
 {
 	print_alphabet();

@@ -11,6 +11,7 @@ int _putchar(char c);
  * print_alpahbet_x10 - print the alphabet, in lowercase
  * Return - Always 0.
  */
+/*
 void print_alphabet_x10(void)
 {
 	int n, i = 1;
@@ -26,7 +27,7 @@ void print_alphabet_x10(void)
 		_putchar('\n');
 		i++;
 	}
-}
+}*/
 /**
  * print_alphabet - print alphabet in lowercase
  * Return: Always 0.
@@ -46,7 +47,7 @@ void print_alphabet(void);
  * _islower - checks for lowercase character
  * Return: Always 0.
  */
-int _islower(int c)
+/*int _islower(int c)
 {
 	if (c >= 'a' && c <= 'z')
 	{
@@ -56,12 +57,12 @@ int _islower(int c)
 	{
 		return (0);
 	}
-}
+}*/
 /**
  * _isalpha - checks for alphabetic character.
  * Return: Always 0.
  */
-int _isalpha(int c)
+/*int _isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
@@ -71,7 +72,7 @@ int _isalpha(int c)
 	{
 		return (0);
 	}
-}
+}*/
 /**
  * print_sign - prints the sign of a number
  * Return: Always 0.

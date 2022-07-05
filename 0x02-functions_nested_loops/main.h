@@ -46,3 +46,61 @@ void print_alphabet(void)
 	}
 	_putchar('\n');
 }
+/**
+ * _islower - checks for lowercase character
+ * Return: Always 0.
+ */
+int _islower(int c)
+{
+	if (c >= 'a' && c <= 'z')
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
+/**
+ * _isalpha - checks for alphabetic character.
+ * Return: Always 0.
+ */
+int _isalpha(int c)
+{
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
+/**
+ * print_sign - prints the sign of a number
+ * Return: Always 0.
+ */
+int print_sign(int n)
+{
+	if (n > 0)
+	{
+		_putchar('+');
+		_putchar(',');
+		_putchar(' ');
+		return (1);
+	}
+	if (n == 0)
+	{
+		_putchar('0');
+		_putchar(',');
+		_putchar(' ');
+		return (0);
+	}
+	if (n < 0)
+	{
+		_putchar('-');
+		_putchar(',');
+		_putchar(' ');
+		return (-1);
+	}
+}

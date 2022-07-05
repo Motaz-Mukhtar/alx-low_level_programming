@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * print_alpahbet_x10 - print the alphabet, in lowercase
  * Return - Always 0.
@@ -11,10 +12,10 @@ void print_alphabet_x10(void)
 		n = 'a';
 		while (n <= 'z')
 		{
-			_putchar(n);
+			putchar(n);
 			n++;
 		}
-		_putchar('\n');
+		putchar('\n');
 		i++;
 	}
 }

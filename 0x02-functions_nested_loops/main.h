@@ -33,7 +33,7 @@ void print_alphabet_x10(void)
  * Return: Always 0.
  */
 void print_alphabet(void);
-{
+/*{
 	int n = 'a';
 	
 	while (n <= 'z')
@@ -42,7 +42,7 @@ void print_alphabet(void);
 		n++;
 	}
 	_putchar('\n');
-}
+} */
 /**
  * _islower - checks for lowercase character
  * Return: Always 0.

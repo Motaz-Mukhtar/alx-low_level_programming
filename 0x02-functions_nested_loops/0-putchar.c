@@ -1,14 +1,17 @@
 #include <stdio.h>
 /**
- * main - Entery Point
- * syaHello - print _putchar
- * Return: main function
-*/
+ * sayHello - Print _putchar followed by new line
+ * Return: main fucntion.
+ */
 int sayHello(void)
 {
 	printf("_putchar\n");
 	return (0);
 }
+/**
+ * main - Entry point of program
+ * Return: main function
+ */
 
 int main(void)
 {

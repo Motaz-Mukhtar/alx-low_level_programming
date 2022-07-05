@@ -11,9 +11,9 @@ int _putchar(char c);
  * print_alpahbet_x10 - print the alphabet, in lowercase
  * Return - Always 0.
  */
-/*
-void print_alphabet_x10(void)
-{
+
+void print_alphabet_x10(void);
+/*{
 	int n, i = 1;
 
 	while (i <= 10)

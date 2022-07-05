@@ -1,11 +1,21 @@
-#include <stdio.h>
 #include "main.h"
 /**
- * main - Entry point of the program
+ * print_alphabet_x10 - Entry point of the program
  * Return: Always 0.
  */
-int main(void)
+void print_alphabet_x10(void)
 {
-	print_alphabet_x10();
-	return (0);
+	int n, i = 1;
+	
+	while (i <= 10)
+	{
+		n = 'a';
+		while (n <= 'z')
+		{
+			_putchar(n);
+			n++;
+		}
+		_putchar('\n');
+		i++;
+	}
 }

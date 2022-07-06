@@ -6,28 +6,19 @@
  */
 void times_table(void)
 {
-	int n, j = 1, i = 0;
+	int n, j = 0, i = 0;
 	
-	while (j <= 10)
+	while (j <= 9)
 	{
 		n = 1;
-		while (n <= 10)
+		while (n <= 9)
 		{
-			//putchar(i + '0');
-			//putchar(',');
-			//putchar(' ');
-			printf("%d, ", i);
+			printf("%d", j * n);
+			putchar(',');
+			putchar(' ');
 			n++;
-			i -= j;
 		}
 		putchar('\n');
 		j++;
-		//i += j;
 	}
-}
-
-int main(void)
-{
-	times_table();
-	return (0);
 }

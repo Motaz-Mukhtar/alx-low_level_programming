@@ -21,20 +21,9 @@ void times_table(void)
 			}
 			else
 			{
-				if (j * n <= 9)
-				{
 				
 				printf("  %d", j * n);
 				putchar(',');
-				}
-				else
-				{
-					if ((9 * n) % 9 == 0)
-					{
-						printf("  %d", j * n);
-						putchar(',');
-					}
-				}
 			}
 			n++;
 		}

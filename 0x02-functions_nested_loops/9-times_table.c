@@ -14,12 +14,12 @@ void times_table(void)
 		while (n <= 9)
 		{
 			printf("%d", j * n);
-			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
+			putchar(',');
+			putchar(' ');
+			putchar(' ');
 			n++;
 		}
-		_putchar('\n');
+		putchar('\n');
 		j++;
 	}
 }

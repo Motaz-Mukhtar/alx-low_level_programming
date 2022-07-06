@@ -13,10 +13,20 @@ void times_table(void)
 		n = 0;
 		while (n <= 9)
 		{
-			printf("%d", j * n);
-			putchar(',');
-			putchar(' ');
-			putchar(' ');
+			if (j * n >= 10)
+			{
+				printf("%d", j * n);
+				putchar(',');
+				putchar(' ');
+
+			}
+			else
+			{
+				printf("%d", j * n);
+				putchar(',');
+				putchar(' ');
+				putchar(' ');
+			}
 			n++;
 		}
 		putchar('\n');

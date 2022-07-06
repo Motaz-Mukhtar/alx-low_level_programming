@@ -15,21 +15,35 @@ void times_table(void)
 		{
 			if (j * n >= 10)
 			{
-				printf("%d", j * n);
+				printf(" %d", j * n);
 				putchar(',');
-				putchar(' ');
 
 			}
 			else
 			{
-				printf("%d", j * n);
+				if (j * n <= 9)
+				{
+				
+				printf("  %d", j * n);
 				putchar(',');
-				putchar(' ');
-				putchar(' ');
+				}
+				else
+				{
+					if ((9 * n) % 9 == 0)
+					{
+						printf("  %d", j * n);
+						putchar(',');
+					}
+				}
 			}
 			n++;
 		}
 		putchar('\n');
 		j++;
 	}
+}
+int main(void)
+{
+	times_table();
+	return (0);
 }

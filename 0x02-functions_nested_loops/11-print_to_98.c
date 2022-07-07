@@ -12,40 +12,26 @@ void print_to_98(int n)
 	if (n != 98)
 	{
 		if (n <= 98)
-		{
 			key = 1;
-		}
 		else
-		{
 			key = 0;
-		}
 		while (n <= 98 && key == 1)
 		{
 			if (n == 98)
-			{
 				printf("%d\n", n);
-			}
 			else
-			{
 				printf("%d, ", n);
-			}
 			n++;
 		}
 		while (n >= 98 && key == 0)
 		{
 			if (n == 98)
-			{
 				printf("%d\n", n);
-			}
 			else
-			{
 				printf("%d, ", n);
-			}
 			n--;
 		}
 	}
 	else
-	{
 		printf("98\n");
-	}
 }

@@ -36,9 +36,3 @@ void jack_bauer(void)
 		b++;
 	}
 }
-
-int main(void)
-{
-	jack_bauer();
-	return (0);
-}

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * main - Entry point of the program
  * Return: Always 0.
@@ -9,7 +10,7 @@ int main(void)
 
 	printf("Infinite loop incoming :(\n");
 
-	i = 10;
+	i = 0;
 	/**
 	*	while (i < 10)
 	*	{

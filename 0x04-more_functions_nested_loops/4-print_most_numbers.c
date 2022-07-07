@@ -1,20 +1,21 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_most_numbers - This is the Starting point of the program
  * Return: Always 0.
  */
 void print_most_numbers(void)
 {
-	char c = 'a';
+	int c = 0;
 
-	while (c <= 'z')
+	while (c < 10)
 	{
-		if (c != 'q' && c != 'e')
+		if (c != 2 && c != 4)
 		{
-			printf("%c", c);
+			_putchar(c);
 		}
 		c++;
 	}
-	printf("\n");
+	_putchar('\n');
 	return (0);
 }

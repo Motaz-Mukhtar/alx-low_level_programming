@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Entry point of the program 
+ * main - Entry point of the program
  * Return: Always 0.
  */
 int main(void)
@@ -9,9 +9,9 @@ int main(void)
 
 	printf("Infinite loop incoming :(\n");
 
-	i = 10;
+	i = 0;
 
-	while (i < 10)
+	while (i > 10)
 	{
 		putchar(i);
 	}

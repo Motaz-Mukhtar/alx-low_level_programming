@@ -7,9 +7,15 @@
  */
 void print_to_98(int n)
 {
+	bool key;
+
 	if (n != 98)
 	{
-		while (n <= 98)
+		if (n < 98)
+			key = true;
+		else
+			key = false;
+		while (n < 98 && key == true)
 		{
 			if (n == 98)
 			{
@@ -21,7 +27,7 @@ void print_to_98(int n)
 			}
 			n++;
 		}
-		while (n >= 98)
+		while (n >= 98 && key == false)
 		{
 			if (n == 98)
 			{

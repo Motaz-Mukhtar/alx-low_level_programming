@@ -17,6 +17,5 @@ void print_line(int n)
 		}
 		j++;
 	}
-	_putchar('$');
 	_putchar('\n');
 }

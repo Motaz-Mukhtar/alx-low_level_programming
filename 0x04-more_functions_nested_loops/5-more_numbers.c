@@ -16,14 +16,14 @@ void more_numbers(void)
 		{
 			while (n <= '9')
 			{
-				_putchar(n);
+				putchar(n);
 				n++;
 			}
-			_putchar('1');
-			_putchar(nn);
+			putchar('1');
+			putchar(nn);
 			nn++;
 		}
-		_putchar('\n');
+		printf("\n");
 		j++;
 	}
 }

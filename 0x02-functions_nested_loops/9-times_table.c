@@ -7,7 +7,7 @@
 void times_table(void)
 {
 	int n, j = 0;
-	
+
 	while (j <= 9)
 	{
 		n = 0;
@@ -17,11 +17,9 @@ void times_table(void)
 			{
 				printf(" %d", j * n);
 				putchar(',');
-
 			}
 			else
 			{
-				
 				printf("  %d", j * n);
 				putchar(',');
 			}
@@ -30,9 +28,4 @@ void times_table(void)
 		putchar('\n');
 		j++;
 	}
-}
-int main(void)
-{
-	times_table();
-	return (0);
 }

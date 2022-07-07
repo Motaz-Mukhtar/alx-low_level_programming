@@ -26,3 +26,9 @@ void positive_or_negative(int i)
 		printf("%d is zero\n", n);
 	}
 }
+
+int main(void)
+{
+	positive_or_negative(0);
+	return (0);
+}

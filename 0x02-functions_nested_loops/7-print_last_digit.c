@@ -8,10 +8,7 @@
 int print_last_digit(int n)
 {
 	n = n % 10;
-	return (n, n);
-}
-
-int main(void)
-{	print_last_digit(1024);
-	return (0);
+	if (n == n)
+		return (n);
+	return (n);
 }

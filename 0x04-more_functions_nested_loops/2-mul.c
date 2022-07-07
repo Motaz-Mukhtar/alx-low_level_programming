@@ -11,6 +11,6 @@ int mul(int a, int b)
 	int result;
 
 	result = a * b;
-	putchar("%d", result);
+	printf("%d", result);
 	return (0);
 }

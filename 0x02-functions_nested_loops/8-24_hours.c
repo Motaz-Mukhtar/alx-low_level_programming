@@ -24,7 +24,7 @@ void jack_bauer(void)
 			{
 				if (b > 9 && a > 9)
 				{
-					printf("%d:%d", a, b);
+					printf("%d:%d\n", a, b);
 				}
 			}
 		}
@@ -35,4 +35,10 @@ void jack_bauer(void)
 		}
 		b++;
 	}
+}
+
+int main(void)
+{
+	jack_bauer();
+	return (0);
 }

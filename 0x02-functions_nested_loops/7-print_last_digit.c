@@ -11,9 +11,3 @@ int print_last_digit(int n)
 	putchar(n + '0');
 	return (n);
 }
-
-int main(void)
-{
-	print_last_digit(98);
-	return (0);
-}

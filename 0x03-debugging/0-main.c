@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 #include <stdlib.h>
 #include <time.h>
 /**
@@ -26,7 +26,6 @@ void positive_or_negative(int i)
 		printf("%d is zero\n", n);
 	}
 }
-
 int main(void)
 {
 	positive_or_negative(0);

@@ -26,7 +26,11 @@ void print_diagonal(int n)
 			_putchar('\n');
 		}
 	}
-	if (n <= 0)
+	else if (n <= 0)
+	{
+		_putchar('\n');
+	}
+	else
 	{
 		_putchar('\n');
 	}

@@ -1,5 +1,4 @@
 #include <unistd.h>
-
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
@@ -20,3 +19,5 @@ int _isdigit(int c);
 int mul(int a, int b);
 
 void print_numbers(void);
+
+void print_most_numbers(void);

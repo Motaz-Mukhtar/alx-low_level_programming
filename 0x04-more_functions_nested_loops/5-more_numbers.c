@@ -6,18 +6,19 @@
  */
 void more_numbers(void)
 {
-	int n = 0, j;
-	while (n <= 14)
+	int n, j = 0;
+	while (j < 10)
 	{
-		j = 0;
-		while (j <= 10)
+		n = 0;
+		while (n <= 14)
 		{
-			putchar(n);
-			j++;
+			printf("%d", n);
+			n++;
 		}
-		putchar('\n');
-		n++;
+		_putchar('\n');
+		j++;
 	}
+
 }
 
 int main(void)

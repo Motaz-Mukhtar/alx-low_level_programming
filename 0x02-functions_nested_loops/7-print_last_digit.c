@@ -7,6 +7,7 @@
  */
 int print_last_digit(int n)
 {
+	n = n % 10;
 	printf("%d", n);
 	return (n);
 }

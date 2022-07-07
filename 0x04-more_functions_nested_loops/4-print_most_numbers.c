@@ -7,19 +7,14 @@
 void print_most_numbers(void)
 {
 	int n = '0';
+
 	while (n <= '9')
 	{
 		if (n != '2' && n != '4')
 		{
-			putchar(n);
+			_putchar(n);
 		}
 		n++;
 	}
-	putchar('\n');
-}
-
-int main(void)
-{
-	print_most_numbers();
-	return (0);
+	_putchar('\n');
 }

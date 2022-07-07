@@ -4,6 +4,7 @@
 #include <time.h>
 /**
  * positive_or_negative - is the number @n pos or neg
+ * @n: integar type.
  * Return: Always 0.
  */
 void positive_or_negative(int n)
@@ -25,13 +26,4 @@ void positive_or_negative(int n)
 	{
 		printf("%d is zero", n);
 	}
-}
-/**
- * main - Entry point of the program
- * Return: Always 0.
- */
-int main(void)
-{
-	positive_or_negative(0);
-	return (0);
 }

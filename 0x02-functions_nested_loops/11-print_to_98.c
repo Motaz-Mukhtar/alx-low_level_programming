@@ -23,9 +23,3 @@ void print_to_98(int n)
 	printf("\n");
 	printf("%d\n", n);
 }
-
-int main(void)
-{
-	print_to_98(98);
-	return (0);
-}

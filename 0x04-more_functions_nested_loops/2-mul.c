@@ -11,7 +11,6 @@ int mul(int a, int b)
 	int re;
 
 	re = a * b;
-	printf("%d", re);
-	putchar('\n');
+	printf("%d\n", re);
 	return (0);
 }

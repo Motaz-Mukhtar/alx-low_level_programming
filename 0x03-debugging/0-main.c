@@ -4,7 +4,7 @@
 #include <time.h>
 /**
  * positive_or_negative - is the number @n pos or neg
- * @n: integar type.
+ * @i: integar type.
  * Return: Always 0.
  */
 void positive_or_negative(int i)

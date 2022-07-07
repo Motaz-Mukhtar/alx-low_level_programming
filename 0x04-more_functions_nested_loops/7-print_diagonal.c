@@ -15,26 +15,17 @@ void print_diagonal(int n)
 		{
 			if (n > 0)
 			{
-				putchar(' ');
+				_putchar(' ');
 			}
 		}
 		if (n > 0)
 		{
-			putchar('\\');
+			_putchar('\\');
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 	if (n <= 0)
 	{
-		putchar('\n');
+		_putchar('\n');
 	}
-}
-
-int main(void)
-{
-	print_diagonal(0);
-	print_diagonal(2);
-	print_diagonal(10);
-	print_diagonal(-4);
-	return (0);
 }

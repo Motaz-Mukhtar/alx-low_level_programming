@@ -7,7 +7,9 @@
  */
 void print_to_98(int n)
 {
-	for (int i = 0; i <= n; i++)
+	int i;
+
+	for (i = 0; i <= n; i++)
 	{
 		if (i == n)
 		{
@@ -15,9 +17,15 @@ void print_to_98(int n)
 		}
 		else
 		{
-		printf("%d, ", i);
+			printf("%d, ", i);
 		}
 	}
-	_putchar('\n');
+	printf("\n");
 	printf("%d\n", n);
+}
+
+int main(void)
+{
+	print_to_98(98);
+	return (0);
 }

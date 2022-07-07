@@ -27,3 +27,12 @@ void positive_or_negative(int i)
 		printf("%d is zero\n", n);
 	}
 }
+/**
+ * main - Entry point of the function
+ * Return: Always 0.
+ */
+int main(void)
+{
+	positive_or_negative(0);
+	return (0);
+}

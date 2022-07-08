@@ -90,7 +90,7 @@ int main(void)
 	moanth = 4;
 	day 01;
 	year = 1997;
-	day = convert_day(month, day);
+	//day = convert_day(month, day);
 	print_remaining_days(month, day, year);
 	return (0);
 }

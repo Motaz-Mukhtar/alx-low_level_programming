@@ -6,24 +6,19 @@
  */
 void more_numbers(void)
 {
-	int n, nn, j = '0';
+	int n, j;
 
-	while (j <= '9')
+	for (j = 0; j < 10; j++)
 	{
-		n = '0';
-		nn = '0';
-		while (nn <= '4')
+		for (n = 0; n < 15; n++)
 		{
-			while (n <= '9')
-			{
-				_putchar(n);
-				n++;
-			}
-			_putchar('1');
-			_putchar(nn);
-			nn++;
+			putchar(n + '0');
 		}
-		printf("\n");
-		j++;
+		putchar('\n');
 	}
+}
+int main(void)
+{
+	more_numbers();
+	return (0);
 }

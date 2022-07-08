@@ -12,13 +12,8 @@ void more_numbers(void)
 	{
 		for (n = 0; n < 15; n++)
 		{
-			putchar(n + '0');
+			_putchar(n + '0');
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
-}
-int main(void)
-{
-	more_numbers();
-	return (0);
 }

@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * main -check numbers pos or neg
  * Return: Always 0.

@@ -9,9 +9,9 @@
 void puts_half(char *str)
 {
 	int length = strlen(str);
-	int len = (strlen(str) - 1) / 2;
+	int len = (strlen(str) / 2) - 1;
 
-	while (len <= length)
+	while (len < length)
 	{
 		printf("%c", str[len]);
 		len++;

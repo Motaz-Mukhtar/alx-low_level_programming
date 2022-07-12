@@ -12,15 +12,14 @@ void print_array(int *a, int n)
 
 	while (i < n)
 	{
-		if (i == 4)
-		{
-			printf(" %d", a[i]);
-		}
 		if (i == 0)
 		{
 			printf("%d,", a[i]);
 		}
-		else
+		else if (i == 4)
+		{
+			printf(" %d", a[i]);
+		} else
 		{
 			printf(" %d,", a[i]);
 		}

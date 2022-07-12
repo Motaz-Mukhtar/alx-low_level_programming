@@ -12,7 +12,14 @@ void print_array(int *a, int n)
 
 	while (i <= n)
 	{
-		printf("%d, ", a[i]);
+		if (n == 5)
+		{
+			printf("%d", a[i]);
+		}
+		else
+		{
+			printf("%d, ", a[i]);
+		}
 		i++;
 	}
 	printf("\n");

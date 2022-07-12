@@ -17,3 +17,6 @@ void rev_string(char *s)
 	}
 	printf("\n");
 }
+
+int main(void)
+

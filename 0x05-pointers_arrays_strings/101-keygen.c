@@ -8,17 +8,14 @@
  */
 int main(void)
 {
-	char *randChar
-	=
-	"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*";
 	char n, i = 0;
 
 	srand(time(0));
-
+	n = 33 + (rand() % 125);
 	while (i < 10)
 	{
-		n = 0 + (rand() % (strlen(randChar) - 1));
-		printf("%c", randChar[n]);
+		n = 33 + (rand() % 125);
+		putchar(n);
 		i++;
 	}
 	printf("\n");

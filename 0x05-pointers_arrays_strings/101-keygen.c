@@ -11,14 +11,15 @@ int main(void)
 	char chars[]
 	=
 	"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*";
-	char n;
+	char n, i = 0;
 
 	srand(time(0));
 
-	for (int i = 0; i < 10; i++)
+	while (i < 10)
 	{
 		n = 0 + (rand() % (strlen(chars) - 1));
 		printf("%c", chars[n]);
+		i++;
 	}
 	printf("\n");
 	return (0);

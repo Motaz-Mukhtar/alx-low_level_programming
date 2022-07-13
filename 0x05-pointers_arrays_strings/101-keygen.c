@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	char chars[]
+	char *randChar
 	=
 	"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*";
 	char n, i = 0;
@@ -17,8 +17,8 @@ int main(void)
 
 	while (i < 10)
 	{
-		n = 0 + (rand() % (strlen(chars) - 1));
-		printf("%c", chars[n]);
+		n = 0 + (rand() % (strlen(randChar) - 1));
+		printf("%c", randChar[n]);
 		i++;
 	}
 	printf("\n");

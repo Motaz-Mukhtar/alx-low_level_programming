@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	char n, i = 0;
+	char n, i = 1;
 
 	srand(time(0));
 	n = 33 + (rand() % 125);

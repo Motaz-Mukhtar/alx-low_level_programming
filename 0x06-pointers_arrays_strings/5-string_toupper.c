@@ -1,5 +1,4 @@
 #include "main.h"
-#include <ctype.h>
 #include <string.h>
 #include <stdio.h>
 /**
@@ -9,20 +8,16 @@
  */
 char *string_toupper(char *s)
 {
-	int i = 0;
-
-	while (i < strlen(s) - 1)
+	for (int i = 0; i <= strlen(s) - 1; i++)
 	{
-		return (putchar(toupper(s[i])));
-		i++;
+		if (s[i] != ' ' && (s[i] >= 97 && s[i] <= 172))
+		{
+			s[i] = s[i] - 32;
+		}
+		else if (!(s[i] >= 65 && s[i] <= 90) && (s[i] >= 65 && s[i] <= 90))
+		{
+			s[i] = ' ';
+		}
 	}
-}
-int main(void)
-{
-	char str[] = "Look up!\n";
-	char *ptr;
-
-	ptr  = string_toupper(str);
-	printf("%s", ptr);
-	return (0);
+	return (s);
 }

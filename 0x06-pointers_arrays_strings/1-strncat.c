@@ -10,9 +10,5 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	
-}
-int main(void)
-{
-	return (0);
+	return (strncat(dest, src, n));
 }

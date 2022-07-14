@@ -8,8 +8,9 @@
  */
 char *string_toupper(char *s)
 {
-	int i = 0;
+	int i;
 
+	i = 0;
 	while (i <= strlen(s) - 1)
 	{
 		if (s[i] != ' ' && (s[i] >= 97 && s[i] <= 172))

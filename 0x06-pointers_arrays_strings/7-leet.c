@@ -25,12 +25,3 @@ char *leet(char *s)
 	}
 	return (s);
 }
-int main(void)
-{
-	char s[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\n";
-	char *ptr;
-
-	ptr = leet(s);
-	printf("%s", ptr);
-	return (0);
-}

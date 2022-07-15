@@ -15,12 +15,22 @@ char *leet(char *s)
 	while (i < strlen(s) - 1)
 	{
 		b = 0;
-		while (s[i] == chars[b] || s[i] == chars[b] - 32)
+		while (b < l)
 		{
-			s[i] = numbers[b];
+			if (s[i] == chars[b] || s[i] == chars[b] - 32)
+				s[i] = numbers[b];
 			b++;
 		}
 		i++;
 	}
 	return (s);
+}
+int main(void)
+{
+	char s[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\n";
+	char *ptr;
+
+	ptr = leet(s);
+	printf("%s", ptr);
+	return (0);
 }

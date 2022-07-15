@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include <string.h>
 /**
  * leet - ecnodes string int 1337.
  * @s: char type
@@ -12,7 +11,7 @@ char *leet(char *s)
 	char chars[5] = {'a', 'e', 'o', 't', 'l'};
 	int i = 0, l = 5, b;
 
-	while (i < strlen(s) - 1)
+	while (s[i])
 	{
 		b = 0;
 		while (b < l)

@@ -7,12 +7,17 @@
  */
 void print_chessboard(char (*a)[8])
 {
-	for (int row = 0; row < 8; row++)
+	int row = 0, col;
+
+	while (row < 8)
 	{
-		for (int col = 0; col < 8; col++)
+		col = 0;
+		while (col < 8)
 		{
 			printf("%c", a[row][col]);
+			col++;
 		}
 		printf("\n");
+		row++;
 	}
 }

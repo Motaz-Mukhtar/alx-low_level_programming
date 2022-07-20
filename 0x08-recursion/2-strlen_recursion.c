@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * strlen_recursion - returns the length of a sring
+ * _strlen_recursion - returns the length of a sring
  * @s: char type
  * Return: Always 0.
  */

@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - the main fucntion of the program 
+ * main - the main fucntion of the program
  * @argc: int type
  * @argv: char type
  * Return: Always 0.

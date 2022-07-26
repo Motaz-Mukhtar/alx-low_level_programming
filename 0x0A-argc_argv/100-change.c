@@ -21,14 +21,17 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 	}
-	for (j = 0; j < 5 && num >= 0; j++)
+	if (num > 0)
 	{
-		while (num >= coins[j])
+		for (j = 0; j < 5 && num >= 0; j++)
 		{
-			num -= coins[j];
-			result++;
+			while (num >= coins[j])
+			{
+				num -= coins[j];
+				result++;
+			}
 		}
+		printf("%d\n", result);
 	}
-	printf("%d\n", result);
 	return (0);
 }

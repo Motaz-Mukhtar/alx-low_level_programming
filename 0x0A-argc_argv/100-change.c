@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 	int num, j, result = 0;
 	int coins[] = {25, 10, 5, 2, 1};
 
-	if (artc != 2)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);

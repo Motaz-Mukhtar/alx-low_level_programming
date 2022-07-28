@@ -9,10 +9,16 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *p;
+	unsigned int i;
 
-	p = malloc(nmemb);
+	p = malloc(nmemb * size);
 	if (p == NULL)
 		return (NULL);
-	for (unsigned int i = 0; ; i++)
+	i = 0;
+	while (i < size)
+	{
 		return (p);
+		i++;
+	}
+	return (0);
 }

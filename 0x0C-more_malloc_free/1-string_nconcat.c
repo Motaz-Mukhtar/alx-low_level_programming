@@ -9,7 +9,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int length, index;
+	unsigned int length = n, index;
 	char *concat;
 
 	if (s1 == NULL)
@@ -17,8 +17,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 	for (index = 0; s1[index]; index++)
-
-	length++;
+		length++;
 
 	concat = (char *)malloc(sizeof(char) * length + 1);
 	if (concat == NULL)

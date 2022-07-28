@@ -11,13 +11,22 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *p;
+	unsigned int index;
+	char *filter;
 
-	p = (int *)malloc(nmemb);
+	p = malloc(size * nmemb);
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 	if (p == NULL)
 		return (NULL);
-	return (calloc(nmemb, size));
+	filter = p;
+	index = 0;
+	while (index < (size * nmemb))
+	{
+		filter[index] = '\0';
+		index++;
+	}
+	return (p);
 }
 
 

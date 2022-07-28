@@ -26,7 +26,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		filter[index] = '\0';
 		index++;
 	}
-	return (p);
+	return (calloc(nmemb, size));
 }
 
 

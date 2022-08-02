@@ -1,5 +1,6 @@
 #include "dog.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * print_dog - prints a struct dog
  * @d: struct dog
@@ -7,7 +8,10 @@
  */
 void print_dog(struct dog *d)
 {
-	if (d != NULL)
+	int *p;
+	
+	p = malloc(sizeof(d));
+	if (p != NULL)
 	{
 		if (d->name == NULL)
 		{
@@ -27,4 +31,5 @@ void print_dog(struct dog *d)
 			printf("Owner: %s\n", d->owner);
 		}
 	}
+	free(p);
 }

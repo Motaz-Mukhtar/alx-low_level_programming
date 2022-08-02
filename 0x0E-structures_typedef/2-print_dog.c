@@ -9,8 +9,8 @@
 void print_dog(struct dog *d)
 {
 	int *p;
-	
-	p = malloc(sizeof(d));
+
+	p = malloc(sizeof(*d));
 	if (p != NULL)
 	{
 		if (d->name == NULL)

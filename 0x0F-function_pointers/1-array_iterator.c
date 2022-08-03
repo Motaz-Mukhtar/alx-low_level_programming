@@ -9,12 +9,11 @@
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	void (*func)(int);
-	int i, ssize = size, *p;
+	int i, ssize = size;
 
 	func = action;
-	p = malloc(int *);
 	i = 0;
-	if (p != NULL)
+	if (action != NULL)
 	{
 		while (i < ssize)
 		{

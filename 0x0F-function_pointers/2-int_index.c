@@ -17,7 +17,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 		return (-1);
 	}
 	i = 0;
-	if (func == NULL && array == NULL)
+	if (func != NULL && array != NULL)
 	{
 		while (i < size)
 		{

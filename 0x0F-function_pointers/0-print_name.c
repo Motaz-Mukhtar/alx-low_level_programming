@@ -9,11 +9,9 @@
 void print_name(char *name, void (*f)(char *))
 {
 	void (*func)(char *);
-	int *p;
 
-	p = malloc(char);
 	func = f;
-	if (p != NULL)
+	if (name != NULL)
 	{
 		func(name);
 	}

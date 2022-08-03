@@ -13,22 +13,17 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 	func = cmp;
 	if (size <= 0)
-	{
 		return (-1);
-	}
-	i = 0;
-	if (func != NULL && array != NULL)
-	{
-		while (i < size)
-		{
-			if (func(array[i]))
-			{
-				return (i);
-			}
-			i++;
-		}
-	}
-	else
+	if (func == NULL || array == NULL)
 		return (0);
+	i = 0;
+	while (i < size)
+	{
+		if (func(array[i]))
+		{
+			return (i);
+		}
+		i++;
+	}
 	return (-1);
 }

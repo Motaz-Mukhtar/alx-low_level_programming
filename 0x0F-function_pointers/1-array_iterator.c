@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+#include <stdlib.h>
 /**
  * array_iterator - executes a function given as  a param
  * @array: int type
@@ -8,13 +9,17 @@
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	void (*func)(int);
-	int i, ssize = size;
+	int i, ssize = size, *p;
 
 	func = action;
+	p = malloc(int *);
 	i = 0;
-	while (i < ssize)
+	if (p != NULL)
 	{
-		func(array[i]);
-		i++;
+		while (i < ssize)
+		{
+			func(array[i]);
+			i++;
+		}
 	}
 }

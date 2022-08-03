@@ -11,6 +11,7 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	int i, ssize = size;
 
 	func = action;
+	i = 0;
 	while (i < ssize)
 	{
 		func(array[i]);

@@ -8,10 +8,10 @@
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	void (*func)(int);
-	int i;
+	int i, ssize = size;
 
 	func = action;
-	while (i < size)
+	while (i < ssize)
 	{
 		func(array[i]);
 		i++;

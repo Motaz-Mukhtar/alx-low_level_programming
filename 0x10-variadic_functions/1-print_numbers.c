@@ -12,12 +12,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
 	unsigned int i;
-	int *p;
 
 	va_start(ap, n);
-	p = malloc(n);
-	if (p != NULL)
-	{
 	for (i = 0; i < n; i++)
 	{
 		if (separator == NULL)
@@ -31,6 +27,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		}
 	}
 	printf("\n");
-	}
 	va_end(ap);
 }

@@ -7,16 +7,16 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	var_list ap;
+	va_list ap;
 	int i, sum;
 
-	va_start (ap, coutn);
+	va_start (ap, n);
 
 	sum = 0;
 	if (n == 0)
 		return (0);
-	for (i = 0; i < coutn; i++)
-		sum += var_arg (ap, int);
+	for (i = 0; i < n; i++)
+		sum += va_arg (ap, int);
 	va_end(ap);
 	return (sum);
 }

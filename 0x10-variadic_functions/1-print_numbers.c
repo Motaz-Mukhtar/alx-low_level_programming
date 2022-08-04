@@ -15,8 +15,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	int *p;
 
 	va_start(ap, n);
-	p = malloc(va_arg(ap, int));
-	if (p == NULL)
+	p = malloc(n);
+	if (p != NULL)
 	{
 	for (i = 0; i < n; i++)
 	{

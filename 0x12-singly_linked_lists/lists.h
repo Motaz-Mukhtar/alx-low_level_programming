@@ -1,6 +1,8 @@
 #ifndef LISTS_H
 #define LISTS_H
+#include <stdlib.h>
 #include <stddef.h>
+#include <string.h>
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
@@ -15,6 +17,27 @@ typedef struct list_s
 	unsigned int len;
 	struct list_s *next;
 } list_t;
+/**
+ * _strdup_ - duplicate string
+ * @str: string param
+ * Return: 0.
+ */
+char *_strdup_(const char *str)
+{
+	char *s;
+	int len;
+
+	len = strlen(str);
+	s = malloc(sizeof(*s) * (len + 1));
+	if (!s)
+		return (NULL);
+	while (len >= 0)
+	{
+		s[len] = str[len];
+		--len;
+	}
+	return (s);
+}
 
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);

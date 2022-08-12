@@ -9,7 +9,7 @@
  */
 size_t list_len(const list_t *h)
 {
-	int length;
+	int length = 0;
 	int *p;
 
 	p = malloc(sizeof(h));

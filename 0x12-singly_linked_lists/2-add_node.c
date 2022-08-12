@@ -3,6 +3,27 @@
 #include <stdlib.h>
 #include <string.h>
 /**
+ * _strdup- - Duplicate the string
+ * @str: the string
+ * Return: 0.
+ */
+char *_strdup_(const char *str)
+{
+	char *s;
+	int len;
+
+	len = strlen(str);
+	s = malloc(sizeof(*s) * (len + 1));
+	if (!s)
+		return (NULL);
+	while (len >= 0)
+	{
+		s[len] = str[len];
+		--len;
+	}
+	return (s);
+}
+/**
  * add_node - add new node at the beging of list
  * @head: list_t type
  * @str: const char type

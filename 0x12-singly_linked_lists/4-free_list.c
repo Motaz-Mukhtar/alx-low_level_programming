@@ -10,8 +10,7 @@ void free_list(list_t *head)
 {
 	while (head)
 	{
-		free(head->str);
-		free(head->next);
+		head = malloc(sizeof(list_t));
 		free(head);
 		head = head->next;
 	}

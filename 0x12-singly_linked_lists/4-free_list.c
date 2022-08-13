@@ -4,15 +4,16 @@
 #include <string.h>
 /**
  * free_list - frees a list_t list
+ * @head: list_t type
  * Return: 0.
  */
 void free_list(list_t *head)
 {
 	list_t *tmp;
-	while (head != NULL)
+	while (tmp != NULL)
 	{
-		tmp = head;
-		head = head->next;
-		free(tmp);
+		list_t *n1 = tmp;
+		tmp = tmp->next;
+		free(n1);
 	}
 }

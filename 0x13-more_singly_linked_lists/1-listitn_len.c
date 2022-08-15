@@ -4,6 +4,7 @@
 /**
  * listint_len - returns the number of elemin linekd list
  * @h: linked list type
+ * Return: the number of elements
  */
 size_t listint_len(const listint_t *h)
 {

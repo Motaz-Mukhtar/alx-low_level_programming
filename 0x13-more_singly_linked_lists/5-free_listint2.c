@@ -9,10 +9,8 @@
 void free_listint2(listint_t **head)
 {
 	listint_t *tmp;
-	int *p;
 
-	p = malloc(sizeof(head));
-	if (p == NULL)
+	if (*head == NULL)
 		head = NULL;
 	tmp = *head;
 	while (*head != NULL)

@@ -114,9 +114,39 @@ int sum_listint(listint_t *head)
 	return (sum);
 }
 
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
+{
+	listint_t *new = malloc(sizeof(listint_t));
+	unsigned int i = 1;
+
+	if (head == NULL)
+		return (NULL);
+	if (new == NULL)
+		return (NULL);
+	new->n = n;
+	new->next = NULL;
+	if (*head == NULL)
+		*head = new;
+	else
+	{
+		listint_t *tmp = *head;
+		while (tmp->next != NULL)
+		{
+			if (i == idx)
+			{
+				new->next = tmp->next;
+				tmp->next = new;
+			}
+			tmp = tmp->next;
+			i++;
+		}
+	}
+	return (*head);
+}
+
 int main(void)
 {
-	int sum;
+//	int sum;
 	listint_t  *head;
 
 	head = NULL;
@@ -128,8 +158,10 @@ int main(void)
 	add_nodeint_end(&head, 98);
 	add_nodeint_end(&head, 402);
 	add_nodeint_end(&head, 1024);
-	sum = sum_listint(head);
-	printf("sum = %d\n", sum);
+	print_listint(head);
+	printf("---------------\n");
+	insert_nodeint_at_index(&head, 5, 4096);
+	print_listint(head);
 	free_listint2(&head);
 	return (0);
 }

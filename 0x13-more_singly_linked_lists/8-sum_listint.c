@@ -1,5 +1,5 @@
 #include "lists.h"
-#include <stdio.h>
+#include <stdlib.h>
 /**
  * sum_listint - returns the sum of all data(n) on linked list
  * @head: linked lsit type
@@ -8,16 +8,16 @@
 int sum_listint(listint_t *head)
 {
 	int sum;
-	listint_t *tmp;
+	listint_t *tmp = malloc(sizeof(listint_t));
 
 	tmp = head;
 	if (head == NULL)
 		return (0);
-	while (head)
+	while (head != NULL)
 	{
-		tmp = tmp->next;
-		sum += head->n;
-		head = tmp;
+		tmp->n += head->n;
+		head = head->next;
 	}
+	sum = tmp->n;
 	return (sum);
 }

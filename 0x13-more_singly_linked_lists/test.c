@@ -102,19 +102,15 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 
 int sum_listint(listint_t *head)
 {
-	listint_t *tmp = malloc(sizeof(listint_t));
 	int sum;
 
-	tmp = head;
-	tmp->n = 0;
 	if (head == NULL)
 		return (0);
 	while (head != NULL)
 	{
-		tmp->n += head->n;
+		sum = sum + head->n;
 		head = head->next;
 	}
-	sum = tmp->n;
 	return (sum);
 }
 

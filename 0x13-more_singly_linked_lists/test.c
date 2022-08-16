@@ -56,17 +56,56 @@ void free_listint2(listint_t **head)
 		free(*head);
 		*head = tmp;
 	}
+	head = NULL;
+}
+
+void free_listint(listint_t *head)
+{
+	listint_t *tmp;
+
+	while (head)
+	{
+		tmp = head->next;
+		free(head);
+		head = tmp;
+	}
+}
+
+int pop_listint(listint_t **head)
+{
+	int num;
+	listint_t *tmp = malloc(sizeof(listint_t));
+
+	if (*head == NULL)
+		return (0);
+	tmp = *head;
+	num = tmp->n;
+	*head = tmp->next;
+	return (num);
 }
 
 int main(void)
 {
+	int n;
 	listint_t  *head;
+
 	head = NULL;
 	add_nodeint_end(&head, 0);
 	add_nodeint_end(&head, 1);
 	add_nodeint_end(&head, 2);
+	add_nodeint_end(&head, 3);
+	add_nodeint_end(&head, 4);
+	add_nodeint_end(&head, 98);
+	add_nodeint_end(&head, 402);
+	add_nodeint_end(&head, 1024);
+	print_listint(head);
+	n = pop_listint(&head);
+	printf("- %d\n", n);
+	print_listint(head);
+	n = pop_listint(&head);
+	printf("- %d\n", n);
 	print_listint(head);
 	free_listint2(&head);
-	printf("%p\n", head);
+	printf("%p\n", (void *)head);
 	return (0);
 }

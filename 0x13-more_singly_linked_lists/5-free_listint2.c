@@ -9,11 +9,10 @@
 void free_listint2(listint_t **head)
 {
 	listint_t *tmp;
-	int *p, *a;
+	int *p;
 
 	p = malloc(sizeof(*head));
-	a = malloc(sizeof(head));
-	if (p == NULL || a == NULL)
+	if (p == NULL)
 		head = NULL;
 	tmp = *head;
 	while (*head != NULL)

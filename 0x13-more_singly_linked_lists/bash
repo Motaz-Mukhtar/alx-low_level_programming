@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall -Werror -Wextra -std=gnu89 test.c
+gcc -Wall -Werror -Wextra -std=gnu89 7-get_nodeint.c

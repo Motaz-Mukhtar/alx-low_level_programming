@@ -7,10 +7,11 @@
  */
 int sum_listint(listint_t *head)
 {
-	int sum;
 	listint_t *tmp = malloc(sizeof(listint_t));
+	int sum;
 
 	tmp = head;
+	tmp->n = 0;
 	if (head == NULL)
 		return (0);
 	while (head != NULL)

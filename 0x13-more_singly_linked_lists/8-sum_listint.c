@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * sum_listint - returns the sum of all data(n) on linked list
  * @head: linked lsit type

@@ -7,7 +7,7 @@
  * @index: unsigned int type
  * Return: nth node
  */
-listint_t *get_nodeint_at_indx(listint_t *head, unsigned int index)
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	unsigned int i = 0;
 	int key = 1;
@@ -22,3 +22,4 @@ listint_t *get_nodeint_at_indx(listint_t *head, unsigned int index)
 	}
 	return (head);
 }
+

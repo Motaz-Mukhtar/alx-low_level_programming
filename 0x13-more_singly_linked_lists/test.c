@@ -84,9 +84,25 @@ int pop_listint(listint_t **head)
 	return (num);
 }
 
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
+{
+	unsigned int i = 0;
+	int key = 1;
+	
+	while (head && key == 1)
+	{
+		if (i == index)
+			key = 0;
+		else
+			head = head->next;
+		i++;
+	}
+	return (head);
+}
+
 int main(void)
 {
-	int n;
+	listint_t *node;
 	listint_t  *head;
 
 	head = NULL;
@@ -99,13 +115,9 @@ int main(void)
 	add_nodeint_end(&head, 402);
 	add_nodeint_end(&head, 1024);
 	print_listint(head);
-	n = pop_listint(&head);
-	printf("- %d\n", n);
-	print_listint(head);
-	n = pop_listint(&head);
-	printf("- %d\n", n);
+	node = get_nodeint_at_index(head, 7);
+	printf("%d\n", node->n);
 	print_listint(head);
 	free_listint2(&head);
-	printf("%p\n", (void *)head);
 	return (0);
 }

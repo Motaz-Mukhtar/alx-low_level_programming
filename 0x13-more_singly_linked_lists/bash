@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall -Werror -Wextra -std=gnu89 9-insert_nodeint.c
+gcc -Wall -Werror -Wextra -std=gnu89 10-delete_nodeint.c

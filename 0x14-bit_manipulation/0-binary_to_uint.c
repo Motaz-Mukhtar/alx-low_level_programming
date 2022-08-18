@@ -18,10 +18,9 @@ unsigned int binary_to_uint(const char *b)
 		if (b[i] == '1' || b[i] == '0')
 		{
 			if (b[i] == '1')
-				number = number + (num * 1);
+				number = number + (num * (b[i] - '0'));
 			else
-				if (b[i] == '0')
-					number = number + (num * 0);
+				number = number + (num * (b[i] - '0'));
 		}
 		else
 			return (0);

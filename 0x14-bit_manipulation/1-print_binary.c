@@ -1,5 +1,14 @@
 #include "main.h"
-#include <stdio.h>
+/**
+ * _putchar -  print char
+ * @c: char type
+ * Return: the char
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
+
 /**
  * print_binary - convert int number to binary num
  * @n: number

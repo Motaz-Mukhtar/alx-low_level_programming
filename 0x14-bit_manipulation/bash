@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall -Werror -Wextra -std=gnu89 5-flip_bits.c
+gcc -Wall -Werror -Wextra -std=gnu89 0-binary_to_uint.c

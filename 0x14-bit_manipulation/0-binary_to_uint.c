@@ -7,12 +7,12 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int i, num = 1, len;
+	int i, num = 1, len = strlen(b) - 1;
 	unsigned int number = 0;
 
 	if (b == NULL)
 		return (0);
-	len = strlen(b) - 1;
+
 	for (i = len; i >= 0; i--)
 	{
 		if (b[i] == '1' || b[i] == '0')

@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall -Werror -Wextra -std=gnu89 1-print_binary.c
+gcc -Wall -Werror -Wextra -std=gnu89 5-flip_bits.c

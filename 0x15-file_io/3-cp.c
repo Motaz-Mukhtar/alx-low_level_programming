@@ -18,7 +18,7 @@ void close_file(int file)
 }
 /**
  * get_buffer - get the buffer of the file
- * file: the file
+ * @file: the file
  * Return: the buffer
  */
 
@@ -37,8 +37,8 @@ char *get_buffer(char *file)
 
 /**
  * main - The main fucntion of the program
- * argc: The length of the array
- * argv: The Array
+ * @argc: The length of the array
+ * @argv: The Array
  * Return: Always 0.
  */
 int main(int argc, char *argv[])
@@ -55,9 +55,7 @@ int main(int argc, char *argv[])
 	from = open(argv[1], O_RDONLY);
 	rd = read(from, buffer, 1024);
 	to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
-
-	while (rd > 0)
-	{
+	do {
 		if (from == -1 || rd == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
@@ -74,7 +72,7 @@ int main(int argc, char *argv[])
 		}
 		rd = read(from, buffer, 1024);
 		to = open(argv[2], O_WRONLY | O_APPEND);
-	}
+	} while (rd > 0);
 
 	free(buffer);
 	close_file(from);

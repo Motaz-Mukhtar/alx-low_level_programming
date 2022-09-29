@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * dlistint_len - returns the number of ele in doubly linkdes list
- * h: The doubly linked lists
+ * @h: The doubly linked lists
  * Return: The length of doubly linked lists
  */
 size_t dlistint_len(const dlistint_t *h)

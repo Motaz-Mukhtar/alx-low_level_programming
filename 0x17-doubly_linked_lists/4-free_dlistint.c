@@ -1,7 +1,7 @@
 #include "lists.h"
 #include <stdlib.h>
 /**
- * void free_dlistint - frees a dlistint_t list
+ * free_dlistint - frees a dlistint_t list
  * @head: dlistint_t type
  * Return: Void Vlue
  */

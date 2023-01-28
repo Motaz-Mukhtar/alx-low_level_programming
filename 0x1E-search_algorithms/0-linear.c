@@ -2,7 +2,7 @@
 #include <stddef.h>
 #include <stdio.h>
 /**
- * linear_search - Searches for 
+ * linear_search - Searches for
  * @a value in an array
  * @array: pointer to the first element of the array to search in
  * @size: the number of elements in array
@@ -21,7 +21,7 @@ int linear_search(int *array, size_t size, int value)
 	i = 0;
 	while (i < size)
 	{
-		printf("Value checked array[%d]\n = [%d]", i, array[i]);
+		printf("Value checked array[%d] = [%d]\n", i, array[i]);
 		if (array[i] == value)
 			return (i);
 		i++;
